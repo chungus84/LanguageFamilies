@@ -32,9 +32,10 @@ public class Language {
         SinoTibetan mandarin = new SinoTibetan("Mandarin Chinese", 920000000);
         SinoTibetan burmese = new SinoTibetan("Burmese", 33000000);
 
-        japanese.getInfo();
-        ixil.getInfo();
-        mandarin.getInfo();
-        burmese.getInfo();
+        Language[] languages = {japanese, ixil, mandarin, burmese};
+
+        for(Language language : languages) {
+            language.getInfo();
+        }
     }
 }
