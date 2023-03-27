@@ -21,6 +21,10 @@ public class Language {
                 " The language follows the ord order: " + this.wordOrder);
     }
 
+    public void setRegion(String newRegion) {
+        this.regionsSpoken = newRegion;
+    }
+
     public static void main(String[] args) {
         Language japanese = new Language("Japanese",
                 126000000,
@@ -37,5 +41,8 @@ public class Language {
         for(Language language : languages) {
             language.getInfo();
         }
+
+        japanese.setRegion("Asia");
+        japanese.getInfo();
     }
 }
