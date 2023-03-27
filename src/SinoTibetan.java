@@ -5,6 +5,9 @@ public class SinoTibetan extends Language {
                 inputNumSpeakers,
                 "Asia",
                 "subject-object-verb");
+        if(inputLanguageName.contains("Chinese")) {
+            this.wordOrder = "subject-verb-object";
+        }
     }
 
 }
