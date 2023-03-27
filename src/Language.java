@@ -27,6 +27,10 @@ public class Language {
                 "Japan",
                 "subject - object - verb");
 
+        Mayan ixil = new Mayan("Ixil", 83600);
+
+
         japanese.getInfo();
+        ixil.getInfo();
     }
 }
