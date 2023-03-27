@@ -61,7 +61,7 @@ public class Language {
         for(Language language : languages) {
             language.getInfo();
         }
-
+        // testing setters
         japanese.setRegion("Asia");
         japanese.setNumSpeakers(127000000);
         japanese.setWordOrder("subject-object-verb");
