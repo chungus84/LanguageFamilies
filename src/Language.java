@@ -1,10 +1,13 @@
 public class Language {
+    /** Parent class for creating language objects */
 
+    // Class variables
     protected String name;
     protected int numSpeakers;
     protected String regionsSpoken;
     protected String wordOrder;
 
+    // Constructor for Languages
     Language(String inputName,
              int inputNumSpeakers,
              String inputRegionsSpoken,
@@ -17,19 +20,23 @@ public class Language {
     }
 
     public void getInfo() {
+        /** Prints out info for the language */
         System.out.println(this.name + " is spoken by " + this.numSpeakers + " people mainly in " + this.regionsSpoken +
                 " The language follows the ord order: " + this.wordOrder);
     }
 
     public void setRegion(String newRegion) {
+        /** sets region of the instance */
         this.regionsSpoken = newRegion;
     }
 
     public void setNumSpeakers(int inputNumSpeakers) {
+        /** sets numSpeakers of the instance */
         this.numSpeakers = inputNumSpeakers;
     }
 
     public void setWordOrder(String newWordOrder) {
+        /** sets wordOrder of the instance */
         this.wordOrder = newWordOrder;
     }
 

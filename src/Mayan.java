@@ -1,5 +1,7 @@
 public class Mayan extends Language {
 
+    /** sets out class for Mayan languages */
+
     Mayan(String inputlanguageName, int inputNumSpeakers) {
         super(inputlanguageName,
                 inputNumSpeakers,
@@ -8,6 +10,7 @@ public class Mayan extends Language {
     }
     @Override
     public void getInfo() {
+        /** overides getInfo from parent Language class */
         System.out.println(this.name + " is spoken by " + this.numSpeakers + " people mainly in " + this.regionsSpoken +
                 " The language follows the ord order: " + this.wordOrder+ "\n Fun Fact: Ki'che' is an ergative language.");
     }
