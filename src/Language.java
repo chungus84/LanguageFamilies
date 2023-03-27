@@ -29,16 +29,25 @@ public class Language {
         this.numSpeakers = inputNumSpeakers;
     }
 
+    public void setWordOrder(String newWordOrder) {
+        this.wordOrder = newWordOrder;
+    }
+
     public static void main(String[] args) {
+
         Language japanese = new Language("Japanese",
                 126000000,
                 "Japan",
                 "subject - object - verb");
 
-        Mayan ixil = new Mayan("Ixil", 83600);
+        Mayan ixil = new Mayan("Ixil",
+                83600);
 
-        SinoTibetan mandarin = new SinoTibetan("Mandarin Chinese", 920000000);
-        SinoTibetan burmese = new SinoTibetan("Burmese", 33000000);
+        SinoTibetan mandarin = new SinoTibetan("Mandarin Chinese",
+                920000000);
+
+        SinoTibetan burmese = new SinoTibetan("Burmese",
+                33000000);
 
         Language[] languages = {japanese, ixil, mandarin, burmese};
 
@@ -48,6 +57,8 @@ public class Language {
 
         japanese.setRegion("Asia");
         japanese.setNumSpeakers(127000000);
+        japanese.setWordOrder("subject-object-verb");
         japanese.getInfo();
+
     }
 }
