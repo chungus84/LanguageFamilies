@@ -25,6 +25,10 @@ public class Language {
         this.regionsSpoken = newRegion;
     }
 
+    public void setNumSpeakers(int inputNumSpeakers) {
+        this.numSpeakers = inputNumSpeakers;
+    }
+
     public static void main(String[] args) {
         Language japanese = new Language("Japanese",
                 126000000,
@@ -43,6 +47,7 @@ public class Language {
         }
 
         japanese.setRegion("Asia");
+        japanese.setNumSpeakers(127000000);
         japanese.getInfo();
     }
 }
