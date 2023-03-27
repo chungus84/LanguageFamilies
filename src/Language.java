@@ -5,7 +5,28 @@ public class Language {
     protected String regionsSpoken;
     protected String wordOrder;
 
-    public static void main(String[] args) {
+    Language(String inputName,
+             int inputNumSpeakers,
+             String inputRegionsSpoken,
+             String inputWordOrder) {
 
+        name = inputName;
+        numSpeakers = inputNumSpeakers;
+        regionsSpoken = inputRegionsSpoken;
+        wordOrder = inputWordOrder;
+    }
+
+    public void getInfo() {
+        System.out.println(this.name + " is spoken by " + this.numSpeakers + " people mainly in " + this.regionsSpoken +
+                " The language follows the ord order: " + this.wordOrder);
+    }
+
+    public static void main(String[] args) {
+        Language japanese = new Language("Japanese",
+                126000000,
+                "Japan",
+                "subject - object - verb");
+
+        japanese.getInfo();
     }
 }
