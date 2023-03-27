@@ -29,8 +29,12 @@ public class Language {
 
         Mayan ixil = new Mayan("Ixil", 83600);
 
+        SinoTibetan mandarin = new SinoTibetan("Mandarin Chinese", 920000000);
+        SinoTibetan burmese = new SinoTibetan("Burmese", 33000000);
 
         japanese.getInfo();
         ixil.getInfo();
+        mandarin.getInfo();
+        burmese.getInfo();
     }
 }
